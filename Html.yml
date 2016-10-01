@@ -102,6 +102,7 @@ questions:
 ---
 count: 2
 bloom: apply
+input: html
 questions: 
     - |
         Vložte libovolným způsobem kód stránky kisk.cz do [validátoru](https://www.google.cz/search?rls=en&q=co+je+to+valid%C3%A1tor) a do odpovědi zkopírujte chyby a varování nalezené validátorem.
@@ -124,6 +125,7 @@ questions:
 count: 1
 bloom: create
 input: file
+comments: 5
 vars:
     book:
         - "http://www.gutenberg.org/ebooks/1342"
