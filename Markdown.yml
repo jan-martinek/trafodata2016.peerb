@@ -104,7 +104,7 @@ questions: |
     - V odstavcích textu vhodným způsobem zvýrazněte důležité pasáže. Pasáže si vyberte dle vlastního uvážení.
     - Vybraný text není hypertextovým dokumentem. Přidejte do něj alespoň pět odkazů na relevantní webové zdroje. Odkazy važte přímo na text knihy, nedoplňujte vlastní text. (Příklad: Do Dickensova románu, který pojednává o životu v chudobě, byste mohli přidat odkaz na relevantní data o životní úrovni v daném období.)
     
-    Do vstupního pole vepište jakékoli postřehy a poznámky související s úkolem.
+    Do komentáře vepište jakékoli postřehy a poznámky související s úkolem.
 ---
 bloom: create
 input: file
