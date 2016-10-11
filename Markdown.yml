@@ -84,7 +84,7 @@ questions: "Popište v základech podobnosti a rozdíly syntaxe **%syntax%** vů
 ---
 bloom: create
 input: markdown
-coumments: 8
+comments: 8
 vars:
     book:
         - http://www.gutenberg.org/ebooks/133
