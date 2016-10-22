@@ -150,5 +150,3 @@ vars:
     name2: ['křestní jméno', 'příjmení']
 questions: |
     Ze [sdíleného souboru](https://goo.gl/9D2Rk1) si zkopírujte data do vašeho tabulkového procesoru. Odstraňte z něj duplicity, vyfiltrujte záznamy, které začínají na stejné písmeno jako vaše %name1% a ostatní vymažte. Ve druhém sloupci zvýrazněte vaší oblíbenou barvou záznamy, které začínají na písmeno jako vaše %name2%. (Pokud takové záznamy v seznamu nejsou, tak si vyberte jiné písmeno a napište to do komentáře.) Ve třetím sloupci zvýrazněte kladné záznamy zelenou výplní a záporné červenou výplní.
-    
-    > Všechny praktické úkoly uložte do jednoho sešitu, každý úkol na jeden list. Sešit uložte jako ukoly.xls a odevzdejte.
