@@ -59,8 +59,6 @@ rubrics:
         3: "Data jsou správně vložena a seřazena podle počtu shlédnutí od největšího po nejnižší."
 preface: |
     Dejte si pozor na správné užívání pojmů.
-    
-    Všechny praktické úkoly uložte *do jednoho sešitu, každý úkol na jeden list*. Sešit uložte jako `ukoly.xls` a odevzdejte.
 ---
 bloom: understand
 questions:
