@@ -39,12 +39,6 @@ rubrics:
         1: "V úkolu se s termíny pracuje neobratně, ale je vidět určité porozumění."
         2: "Termíny jsou používány správně a konzistentně, ale občas se vyskytují drobné chyby."
         3: "Autor/ka obratně pracuje s termíny. Správně je definuje a v úkolu je používá konzistentně."
-    -
-        metric: "Je tabulka v HTML / Markdown kódu zapsaná správně?"
-        0: "Zápis zcela chybí, nebo obsahuje mnoho chyb."
-        1: "Zápis obsahuje více chyb, ale struktura kódu je správná."
-        2: "Zápis obsahuje jednu až dvě syntaktické chyby."
-        3: "Zápis je zcela správně."
     - 
         metric: "Jsou praktické úkoly zpracovány správně a odevzdány ve správné podobě?"
         0: "Úkoly zcela chybí, nebo obsahují zásadní problémy."
