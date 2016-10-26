@@ -58,7 +58,7 @@ bloom: understand
 questions:
     - "Definujte *vlastními slovy* co nejpřesněji pojem *objekt* a vysvětlete, jak se k němu vztahují pojmy *entita* a *atribut*."
     - "Definujte *vlastními slovy* co nejpřesněji pojem *entita* a vysvětlete, jak se k němu vztahují pojmy *objekt* a *atribut*."
-    - "Definujte *vlastními slovy* co nejpřesněji pojem *atribut* a vysvětlete, jak se k němu vztahují pojmy *objekt* a *atribut*."
+    - "Definujte *vlastními slovy* co nejpřesněji pojem *atribut* a vysvětlete, jak se k němu vztahují pojmy *objekt* a *entita*."
 ---
 bloom: remember
 allowRepeat: question
