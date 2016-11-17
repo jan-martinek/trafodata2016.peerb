@@ -19,7 +19,7 @@ rubrics:
         items:
             - Výstup zadaného dotazu je správně popsán. w2
             - Jsou popsány alespoň tři variace dotazu na základě proměň různých parametrů.
-            - Podivné hodnoty jsou související se sloupcem [agent.city] jsou vysvětlené. w0.5
+            - Podivné hodnoty související se sloupcem `agent.city` jsou vysvětlené. w0.5
     -
         checklist: "Hodnocení tvorby databázového schématu a jeho normalizace (příklady 5 a 6). Při hodnocení obou úkolů si naimportujte odevzdaný export databáze do své vlastní databáze (stejně jako v úkolu ji najdete [zde](http://jan-martinek.com/tmp/db/?sqlite=) a její název je ve tvaru `UČO.db` — tedy např. `123456.db`)."
         items:
