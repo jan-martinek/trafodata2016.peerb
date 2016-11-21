@@ -139,6 +139,7 @@ questions: |
 ---
 bloom: create
 input: file
+comments: 5
 vars:
     tables:
         -
