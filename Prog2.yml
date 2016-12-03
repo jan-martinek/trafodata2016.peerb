@@ -46,6 +46,8 @@ preface:
 bloom: apply
 input: file
 questions: |
+    ### Spouštění vlastní funkce v konzoli
+
     Vložte do javascriptové konzole následující funkci, která umožňuje dohledat úkol, jehož součástí je konkrétní písmeno (a potvrďte vložení Enterem):
         
         function getLinks(letter) {
@@ -63,10 +65,14 @@ questions: |
         }
     
     A následně tuto funkci zavolejte přímo v konzoli — napište `getLinks('a')` a stiskněte Enter (můžete použít i jinou hodnotu parametru, která vrací neprázdný výsledek). Pořiďte screenshot a ten nahrejte do přílohy.
+    
+    > **Tip:** Takto můžete v konzoli spouštět libovolnou funkci (například hříčku z následujícího příkladu) nebo si vypsat nějakou hodnotu, kterou již skript obsahuje.
 ---
 bloom: create
 input: javascript
 questions: |
+    ### Generátor emocí
+
     Inspirujte se hříčkou předváděnou na semináři (viz převyplněný kód) a **vytvořte svou vlastní variantu, která vzbuzuje stejnou nebo jinou emoci**. Principem by mělo zůstat to, že kód vyžaduje nějaké slovo, které pak využije k nějakému vtípku.
     
     Do kódu vložte komentáře, které vysvětlují, co jednotlivé části (řádky) kódu dělají. (Popište klíčová slova, prováděné operace, volané funkce apod.)
@@ -83,9 +89,13 @@ prefill: |
 bloom: create
 input: turtle
 questions: |
+    ### Vločky a cykly
+
     V následujícím kódu budeme kreslit krásnější vločku. Podobně jako při stříhání papírových vloček nemusíme kreslit každou část vločky samostatně. Namísto skládání papíru a nůžek však použijeme cyklus.
     
     Cyklus je zde připravený: prohlédněte si kód v metodě `snowFlake(preview)` a pracujte pouze s obsahem metody `snowFlakePart(mirror)`, která kreslí zrcadlovou polovinu jednoho z „cípů“ vločky. Z tohoto kousku je pak vygenerovaná celá vločka. Aby bylo možné generovat zrcadlovou část, je potřebné všechny otáčky vynásobit proměnnou `mirror` (z otočky doprava o 30 stupňů se tak stane otočka doprava o -30 stupňů, tzn. vlastně otočka doleva).
+    
+    ### Zadání
     
     Vytvořte vlastní design vločky pomocí funkce `snowFlakePart(mirror)`, který je výrazně bohatší a odlišný od připraveného vzoru. Jedinou podmínkou je, že na konci musí želva stát na místě, kde začínala, a dívat se stejným směrem. (Při zpracování úkolu si nicméně zkuste, jak to dopadne, když tuto podmínku nesplníte: výsledky jsou často velmi pěkné. Nejspíš to zakusíte i omylem.)
     
@@ -136,6 +146,8 @@ prefill: |
 bloom: create
 input: turtle
 questions: |
+    ### Želví tanec
+
     Nyní se ujměte tvorby cyklu sami. Naučte želvu tancovat — co je to „želví tanec“, je plně na vás.
     
     Při tvorbě využijte alespoň tři různé cykly (parametricky různé, nemusí jít o různé typy cyklů) a celý tanec klidně rozdělte do více kroků (metod). Připravený kód tentokrát pouze přichystá želvu a postaví ji na střed, zbytek je na vás.
@@ -161,9 +173,13 @@ prefill: |
 bloom: create
 input: turtle
 questions: |
-    Na základě závěrečných úkolů z předchozí lekce naučte želvu psát slovo: vezměte kód pro jednotlivá písmena a vytvořte z něj jednotlivé metody, ty pak postupně zavolejte.
+    ### Metody: jak naučit želvu nové věci
+    
+    Na základě závěrečných úkolů z předchozí lekce **naučte želvu psát písmena a slova**: vezměte kód pro jednotlivá písmena a vytvořte z něj jednotlivé metody, ty pak postupně zavolejte.
     
     Využijte **všechny tři znaky**, které jste vytvořili v předchozí lekci, a vymyslete slovo (nebo dvě) skládající se z alespoň pěti *různých* znaků. Písmena, která potřebujete doplnit, dohledejte v úkolech od ostatních: můžete si pomoci funkcí `getLinks(char)`, s níž jste pracovali v prvním úkolu a která vrací odkazy na úkoly ostatních studujících, které obsahují patřičná písmena.
+    
+    ### Podmínky
     
     > **Tip:** Následující podmínky můžete nyní přeskočit a mrknout se na kód (a výslednou grafiku) a trochu si s ním pohrát, protože se dají odkoukat z kódu samotného. Nicméně předtím, než budete chtít vyrobit finální výsledek, projděte si je.)
     
@@ -177,6 +193,8 @@ questions: |
     - Kód je uspořádaný: **nejprve jsou definovány metody, následně jsou volány ve správném pořadí**. Vyzkoušejte si nejprve drobné změny ve vzorovém kódu, ať víte, která část dělá co.
     - Výsledek **nemusí** obsahovat háčky a čárky (není to nijak hodnoceno), ale pokud je budete chtít využít, nadefinujte si pro ně speciální metody.
     - Pro kontrolu obsahuje kód opět závěrečnou bílou čáru — ta by měla být svislá.
+    
+    ### Výstupní stav
     
     Všimněte si, že díky tomu, že měla želva v předchozí lekci jasně definovaný výstupní stav (musí skončit vpravo dole a být natočená nahoru), můžeme nyní mezi písmena snadno vložit jednoduché mezery pomocí metody `nextChar()`. Díky tomu jsou předvídatelné i případné nutné opravy (např. odstranění zbytečného horizontálního „dojezdu“ želvy).
     
@@ -375,6 +393,8 @@ prefill: |
 bloom: create
 input: turtle
 questions: |
+    ### Rekurze
+    
     Poslední úkol se týká *rekurze*, což je situace, kdy funkce volá sebe samotnou. Možná znáte *fraktály*, tedy obrazce, které jsou podobné sobě samotným. Fraktály je možné popsat pomocí rekurzivních funkcí.
     
     V příkladu níže vidíte metodu `forwardRightAndAgain()`, která želvě říká *"jeď dopředu o nějakou vzdálenost, pak zaboč a udělej to znovu s trochu větší vzdáleností"*. Výsledek je poměrně epický — zvláště, když v průběhu měníme barvu propisky.
