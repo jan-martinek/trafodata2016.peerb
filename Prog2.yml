@@ -1,8 +1,6 @@
 name: "Skriptování 2: Funkce a cykly"
 goals: |
     Ve druhé lekci skriptování si zjednodušíme práci při tvobě algoritmů (naučíme se tvořit funkce) a při opakovaném vykonávání příkazů (naučíme se cykly).
-    
-    Krom toho lehce zavadíme o regulární výrazy.
 reading: |
     Jako obvykle, když se vám nedaří, [zkuste to vygooglit](https://www.google.com/search?q=get+better+at+googling). Pokud se v konzoli objeví chyba javascriptu, ve většině případů najdete na internetu velmi dobrou a podrobnou odpověď. Spolehlivým serverem je [Stack Overflow](http://stackoverflow.com), jehož výskytem ve výsledcích hledání si můžete být téměř jistí. Je důležité učit se správně hledat — jaká slova přinesou rychlé řešení, jak naznačit vyhledávači, že hledáte postup anebo popis konkrétního [API](https://cs.wikipedia.org/wiki/API).
     
@@ -10,12 +8,39 @@ reading: |
     
     Stejně jako v minulé lekci: experimentujte, zkoušejte to, spouštějte nedodělané skripty a sledujte, co želva dělá. Ono se to poddá.
 rubrics:
-    - Jsou všechny skripty funkční?
-    - Jsou úkoly č. 6 a 7 splněny správně? Pokud ne, vysvětlete, kde je problém.
-    - Jsou naprogramované hříčky logické?
-    - Jsou naprogramované hříčky vtipné?
-    - Využívá autor/ka funkci `test()` v závěrečném příkladu? Pokud ne, velmi dobře si rozmyslete, zda za úkol chcete udělit 3 hvězdičky. Takové rozhodnutí případně pečlivě zdůvodněte.
-    - Jaké chyby či nedostatky mají zpracované úkoly? Předveďte, vysvětlete a podložte zdrojem, který autor/ka v odpovědích nezmiňuje. (V [každém programu je možné najít chybu](http://vtipy.cyberserver.cz/sest-programatorskych-zakonu1-v-kazdem-programu-je-alespon-jedna-chyba2/d4496.htm), takže záporná odpověď není přípustná.)
+    -
+        checklist: První dva příklady a popisná otázka č. 6.
+        items:
+            - Screenshot v prvním úkolu zobrazuje úspěšné volání funkce v konzoli.
+            - Hříčka v druhém příkladu je smysluplná a funkční.
+            - Kód hříčky v druhém příkladu obsahuje komentáře, které správně popisují jednotlivé části kódu.
+            - Popis v úkolu č. 6 je fakticky správný.
+    -
+        checklist: Vločka a želví tanec.
+        items:
+            - Skript v úloze s vločkou je upravený a funkční.
+            - Vločka má výrazně bohatší a odlišný design oproti původnímu vzoru.
+            - Želva se vrací uvnitř metody `snowFlakePart(mirror)` vždy zpět tam, odkud vyjela.
+            - Želví tanec je zpracovaný a skript je možné spustit.
+            - Želví tanec využívá alespoň tří různých cyklů.
+    -
+        checklist: Psaní slova.
+        items:
+            - Skript je funkční a vypisuje slovo, které obsahuje alespoň pět různých znaků (**A** a **i** se nepočítají).
+            - Metody obsahují parametr `size`, který je správně aplikován na všechna volání kreslicích metod. 
+            - Metody jsou správně pojmenované.
+            - Slovo je vypsáno správným voláním metod, které vypisují písmena, mezi nimiž je volána funkce, která vkládá mezi písmena drobnou mezeru.
+    -
+        checklist: Úkol č. 7 — želva běhající po ploše.
+        items:
+            - Skript je funkční a želva využívá nějakým způsobem celou plochu náhledového okna.
+            - Skript obsahuje podmínku, která mění chování želvy v závislosti na její poloze.
+    -
+        checklist: Rekurze.
+        items:
+            - Skript je funkčí a obsahuje funkci, která rekurzivně volá sebe samotnou.
+            - Skript a vykreslený výsledek je výrazně odlišný od původního příkladu v zadání.
+            - Skript je podrobně okomentovaný a je jasné, co která část provádí.
 preface:
 ---
 bloom: apply
@@ -113,7 +138,7 @@ input: turtle
 questions: |
     Nyní se ujměte tvorby cyklu sami. Naučte želvu tancovat — co je to „želví tanec“, je plně na vás.
     
-    Při tvorbě využijte alespoň tři různé cykly a celý tanec klidně rozdělte do více kroků (metod). Připravený kód tentokrát pouze přichystá želvu a postaví ji na střed, zbytek je na vás.
+    Při tvorbě využijte alespoň tři různé cykly (parametricky různé, nemusí jít o různé typy cyklů) a celý tanec klidně rozdělte do více kroků (metod). Připravený kód tentokrát pouze přichystá želvu a postaví ji na střed, zbytek je na vás.
     
     ### Tipy
     
@@ -151,6 +176,7 @@ questions: |
     - Nastavte nakonec proměnnou `s` tak, aby slovo velikostně pasovalo do rámečku (měl by mít šířku 470 pixelů; pokud máte menší okno prohlížeče a náhled se vám zobrazuje pod kódem, zkontrolujte výsledek ve větším okně).
     - Kód je uspořádaný: **nejprve jsou definovány metody, následně jsou volány ve správném pořadí**. Vyzkoušejte si nejprve drobné změny ve vzorovém kódu, ať víte, která část dělá co.
     - Výsledek **nemusí** obsahovat háčky a čárky (není to nijak hodnoceno), ale pokud je budete chtít využít, nadefinujte si pro ně speciální metody.
+    - Pro kontrolu obsahuje kód opět závěrečnou bílou čáru — ta by měla být svislá.
     
     Všimněte si, že díky tomu, že měla želva v předchozí lekci jasně definovaný výstupní stav (musí skončit vpravo dole a být natočená nahoru), můžeme nyní mezi písmena snadno vložit jednoduché mezery pomocí metody `nextChar()`. Díky tomu jsou předvídatelné i případné nutné opravy (např. odstranění zbytečného horizontálního „dojezdu“ želvy).
     
